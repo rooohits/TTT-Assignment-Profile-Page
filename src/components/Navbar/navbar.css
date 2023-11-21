@@ -1,0 +1,250 @@
+/* Default Screen */
+.navbarContainer {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(27, 27, 32);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbarLeft {
+  flex: 3;
+}
+
+.logo {
+  position: relative;
+  left: 40px;
+  width: 190px;
+}
+
+.navbarRight {
+  flex: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.listItems {
+  display: flex;
+  list-style: none;
+  padding: 40px;
+}
+
+.listItems li {
+  padding: 10px;
+}
+
+.listItems li:hover {
+  cursor: pointer;
+  background-color: #fde68a;
+  color: black;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn {
+  position: absolute;
+  right: 25px;
+  width: fit-content;
+  height: 50px;
+  background-color: #eab308;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fde68a;
+  color: black;
+}
+
+.btnFont {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Small Phone */
+@media only screen and (max-width: 419px) {
+  .navbarContainer {
+    height: 50px;
+    width: 100%;
+  }
+
+  .logo {
+    position: relative;
+    left: 20px;
+    width: 45%;
+  }
+
+  .navbarRight {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+
+  .btn {
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .btnFont {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .listItems {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+  }
+
+  .menuOpen .listItems {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    background-color: rgb(135, 132, 132);
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menuOpen .listItems li {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+/* Normal Phone */
+@media only screen and (min-width: 420px) and (max-width: 599px) {
+  .navbarContainer {
+    height: 50px;
+    width: 100%;
+  }
+
+  .logo {
+    position: relative;
+    left: 20px;
+    width: 45%;
+  }
+
+  .navbarRight {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+
+  .btn {
+    position: absolute;
+    right: 40px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .btnFont {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .listItems {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+  }
+
+  .menuOpen .listItems {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 33px;
+    right: 100px;
+    background-color: rgb(161, 161, 245);
+    width: 20%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menuOpen .listItems li {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+/* Tablet or Ipad */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .navbarContainer {
+    height: 70px;
+  }
+
+  .navbarLeft {
+    flex: 3;
+  }
+
+  .logo {
+    position: relative;
+    left: 25px;
+    width: 160px;
+  }
+
+  .listItems {
+    position: relative;
+    right: 100px;
+  }
+
+  .listItems li {
+    padding: 10px;
+  }
+
+  .btn {
+    position: absolute;
+    right: 40px;
+    height: 40px;
+  }
+
+  .btnFont {
+    padding: 5px;
+  }
+}

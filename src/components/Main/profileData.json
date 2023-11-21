@@ -1,0 +1,18 @@
+{
+    "coverImageSrc": "assets/cover.jpeg",
+    "profileImageSrc": "assets/profile.jpg",
+    "name": "Rohit Kumar Singh",
+    "premiumIconSrc": "./assets/premium.png",
+    "verifiedIconSrc": "./assets/verified.png",
+    "followers": 6482,
+    "following": 245,
+    "about": "Co-founder & CEO at Terribly Tiny Tales",
+    "instagramLink": "https://www.instagram.com/rooohit.s/",
+    "reacts": {
+      "star": 25,
+      "like": 12,
+      "eye": 57.8,
+      "heart": 26.0
+    }
+  }
+  

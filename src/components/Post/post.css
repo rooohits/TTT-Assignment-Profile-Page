@@ -1,0 +1,276 @@
+/* Default Screen */
+.mainContainer {
+  margin: 10px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post h2 {
+  border: 1.5px solid rgba(146, 146, 146, 0.53);
+  border-bottom: none;
+  padding: 10px;
+  margin-bottom: 0;
+  color: rgb(10, 148, 234);
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr1,
+.hr2 {
+  min-width: 46%;
+  border: 1px solid rgba(146, 146, 146, 0.53);
+  margin: 0 50px;
+  margin-bottom: 50px;
+}
+
+.postContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.postBox {
+  border: 1.5px solid rgba(146, 146, 146, 0.53);
+  border-radius: 20px;
+  width: calc(33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.line2 {
+  padding: 10px 20px;
+  height: 100px;
+}
+
+.line2 p{
+  color: rgb(135, 132, 132);
+}
+
+.line3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.like {
+  width: 30px;
+  height: fit-content;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.like:hover {
+  cursor: pointer;
+}
+
+.span {
+  color: rgb(116, 203, 237);
+}
+
+.right {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(135, 132, 132);
+}
+
+/* Small Phone */
+@media only screen and (max-width: 419px) {
+  .mainContainer {
+    margin: 0;
+    position: relative;
+    bottom: 75px;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .post h2 {
+    border: 1.5px solid rgba(146, 146, 146, 0.53);
+    border-left: none;
+    border-bottom: none;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hr1 {
+    display: none;
+  }
+
+  .hr2 {
+    border: 1px solid rgba(146, 146, 146, 0.53);
+    min-width: 70%;
+    margin-top: 0;
+    margin-left: 140px;
+  }
+
+  .postContainer {
+    position: relative;
+    bottom: 60px;
+    margin-top: 50px;
+  }
+
+  .postBox {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* Normal Phone */
+@media only screen and (min-width: 420px) and (max-width: 599px) {
+  .mainContainer {
+    margin: 0;
+    position: relative;
+    bottom: 65px;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .post h2 {
+    border: 1.5px solid rgba(146, 146, 146, 0.53);
+    border-left: none;
+    border-bottom: none;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .hr1 {
+    display: none;
+  }
+
+  .hr2 {
+    border: 1px solid rgba(146, 146, 146, 0.53);
+    min-width: 75%;
+    margin-top: 0;
+    margin-left: 145px; 
+  }
+
+  .postContainer {
+    position: relative;
+    bottom: 60px;
+    margin-top: 50px;
+  }
+
+  .postBox {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* Tablet or Ipad */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .post h2 {
+    border-bottom: none;
+    padding: 8px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hr1,
+  .hr2 {
+    min-width: 44%;
+    border: 1px solid rgba(146, 146, 146, 0.53);
+    margin: -1px 48px;
+    margin-bottom: 50px;
+  }
+
+  .postContainer {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .postBox {
+    width: 43%;
+    margin: 15px;
+  }
+
+  .line1 {
+    margin: 0 20px;
+  }
+
+  .line1 h3 {
+    font-size: 15px;
+  }
+
+  .line2 {
+    min-height: fit-content;
+  }
+
+  .line2 p {
+    font-size: 14px;
+  }
+
+  .line3 {
+    margin: 0 20px;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .left {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .like {
+    width: 20px;
+    height: fit-content;
+    padding-top: 15px;
+    padding-right: 0;
+  }
+
+  .span {
+    color: skyblue;
+    font-size: 12px;
+  }
+
+  .right {
+    font-size: 9px;
+    padding: 0 20px;
+  }
+}
